@@ -121,7 +121,7 @@ namespace SoftwareDevelopmentTest.Test
                                 option.Checked = false;
                             }
                             // Set it to checked if user has already answered the question
-                            if (ele.Name == asUserAnswers[i])
+                            if (ele.Name == asUserAnswers[i].ToLower())
                             {
                                 option.Checked = true;
                             }
@@ -195,12 +195,9 @@ namespace SoftwareDevelopmentTest.Test
                 }
             }
             // Adds placeholders as they haven't answered - this stops errors later on
-            if (listUserAnswers.Count < 5)
+            while (listUserAnswers.Count < 5)
             {
-                while (listUserAnswers.Count < 5)
-                {
-                    listUserAnswers.Add("a");
-                }
+                listUserAnswers.Add("a");
             }
             Session.Add("Unit1Answers", listUserAnswers.ToArray());
 
@@ -230,12 +227,9 @@ namespace SoftwareDevelopmentTest.Test
                 }
             }
             // Adds placeholders as they haven't answered - this stops errors later on
-            if (listUserAnswers.Count < 5)
+            while (listUserAnswers.Count < 5)
             {
-                while (listUserAnswers.Count < 5)
-                {
-                    listUserAnswers.Add("a");
-                }
+                listUserAnswers.Add("a");
             }
             Session.Add("Unit1Answers", listUserAnswers.ToArray());
 

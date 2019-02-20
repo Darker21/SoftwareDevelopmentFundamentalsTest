@@ -122,7 +122,7 @@ namespace SoftwareDevelopmentTest.Test
                                 option.Checked = false;
                             }
 
-                            if (ele.Name == asUserAnswers[i])
+                            if (ele.Name == asUserAnswers[i].ToLower())
                             {
                                 option.Checked = true;
                             }
@@ -183,6 +183,10 @@ namespace SoftwareDevelopmentTest.Test
                     }
                 }
             }
+            while (listUserAnswers.Count < 5)
+            {
+                listUserAnswers.Add("A");
+            }
             Session.Add("Unit2Answers", listUserAnswers.ToArray());
 
             buttonNext.Visible = true;
@@ -204,6 +208,10 @@ namespace SoftwareDevelopmentTest.Test
                         listUserAnswers.Add(rad.Attributes["data-AnswerLetter"]);
                     }
                 }
+            }
+            while (listUserAnswers.Count < 5)
+            {
+                listUserAnswers.Add("A");
             }
             Session.Add("Unit2Answers", listUserAnswers.ToArray());
 

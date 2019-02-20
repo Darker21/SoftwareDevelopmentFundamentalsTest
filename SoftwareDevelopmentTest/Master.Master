@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="SoftwareDevelopmentTest.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="MainContent">
+            <asp:Panel runat="server" CssClass="HeaderContainer">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <asp:Image runat="server" ImageUrl="~/App_Themes/Main/Images/DarkerLogo.jpg" alt="Jacob Darker" width="100" height="100" title="Jacob Darker" style="border-radius: 100%;" />
+                            </td>
+                            <td width="25">
+                            </td>
+                            <td>
+                                <asp:Label ID="labelPageHeader" runat="server" CssClass="SiteHeader">MTA Software Development Fundamentals (C#)</asp:Label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </asp:Panel>
+            <div class="PageContent">
+                <asp:ContentPlaceHolder ID="ContentMain" runat="server">
+                </asp:ContentPlaceHolder>
+                <br />
+            </div>
+            <div class="FooterContainer">
+                <asp:Label runat="server">Developed By Jacob Darker Employed by <a href="https://www.exbos.co.uk" target="_blank" style="color: inherit; cursor: pointer;">Exbos Ltd</a></asp:Label>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

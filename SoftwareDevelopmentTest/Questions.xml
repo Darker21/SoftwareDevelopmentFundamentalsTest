@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<questions>
+  <Unit Name="Core Programming">
+    <Question Id="1">
+      <Text>
+        You need to gain a better understanding of the solution before writing the program. You decide to develop an algorithm that lists all necessary steps to perform an operation in the correct order. Any technique that you use should minimize complexity and ambiguity. Which of the following techniques should you use?
+      </Text>
+      <Answers>
+        <a>Flowchart</a>
+        <b>Decision Table</b>
+        <c>A C# Program</c>
+        <d>A paragraph in English</d>
+      </Answers>
+      <Correct>
+        <Option>A</Option>
+        <Explanation>A flowchart is a graphical representation of an algorithm that lists, in the correct order, all the necessary steps to perform the operation. A flowchart is simple to create and understand and is not ambiguous.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="2">
+      <Text>
+        Which of the following languages is not considered a high-level programming language?
+      </Text>
+      <Answers>
+        <a>C#</a>
+        <b>Visual Basic</b>
+        <c>Common Intermediate Language</c>
+        <d>C++</d>
+      </Answers>
+      <Correct>
+        <Option>C</Option>
+        <Explanation>
+          C#, Visual Basic, and C++ are all high-level programming languages. The Common Intermediate Language is low-level programming language used by the .NET Framework language compilers to create an executable file.
+        </Explanation>
+      </Correct>
+    </Question>
+    <Question Id="3">
+      <Text>
+        You are writing code for a business application by using C#. You write the following statement to declare an array: <br />int[] numbers = { 1, 2, 3, 4, 5 };<br /> Now, you need to access the second item in this array (the number 2). Which of the following expression should you use?
+      </Text>
+      <Answers>
+        <a>numbers[0]</a>
+        <b>numbers[1]</b>
+        <c>numbers[2]</c>
+        <d>numbers[3]</d>
+      </Answers>
+      <Correct>
+        <Option>B</Option>
+        <Explanation>Any array item can be directly accessed by using an index. In the .NET Framework, array indexes are zero-based, meaning that to access the first element of an array, you use the index 1; to access the second element, you use the index 2; and so on. In the given case, as you need to access the second element, you use the expression numbers[2].</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="4">
+      <Text>
+        You are developing a C# program. You write the following code:|img Unit1_Image1|What will be the value of the variable z after all the above statements are executed?
+      </Text>
+      <Answers>
+        <a>10</a>
+        <b>11</b>
+        <c>12</c>
+        <d>13</d>
+      </Answers>
+      <Correct>
+        <Option>B</Option>
+        <Explanation>
+          The way unary increment and decrement operators work when used as part of an assignment can affect the results. In particular, when the unary increment and decrement operators are used as prefixes, the current value of the identifier is returned before the increment or decrement. On the other hand, when used as a suffix, the value of the identifier is returned after the increment or decrement is complete.<br /><br />
+          When the first statement is executed, the value of x is 10. When the second statement is executed, the value of x and y are both 11. When the final statement is executed, the current value of y (11) is assigned to z before y is incremented by 1.
+        </Explanation>
+      </Correct>
+    </Question>
+    <Question Id="5">
+      <Text>
+        You are writing a method named PrintReport that doesn’t return a value to the calling code. Which keyword should you use in your method declaration to indicate this fact?
+      </Text>
+      <Answers>
+        <a>void</a>
+        <b>private</b>
+        <c>int</c>
+        <d>string</d>
+      </Answers>
+      <Correct>
+        <Option>A</Option>
+        <Explanation>
+          When a method doesn’t return a value back to the calling code, it is indicated by using the void keyword in the method declaration.
+        </Explanation>
+      </Correct>
+    </Question>
+    <Question Id="6">
+      <Text>You need to provide complex multi-way branching in your C# program. You need to make sure that your code is easy to read and understand. Which of the following C# statements should you use?</Text>
+      <Answers>
+        <a>case</a>
+        <b>break</b>
+        <c>if-else</c>
+        <d>switch</d>
+      </Answers>
+      <Correct>
+        <Option>D</Option>
+        <Explanation>
+          The switch statement allows multi-way branching. In many cases, using a switch statement can simplify a complex combination of if-else statements.
+        </Explanation>
+      </Correct>
+    </Question>
+    <Question Id="7">
+      <Text>You are writing a C# program that iterates through a collection such as arrays and lists. You need to make sure that you process each item in the collection once. You also need to ensure that your code is easy to read and debug. Which of the following C# statements provide the best solution for this requirement?</Text>
+      <Answers>
+        <a>while</a>
+        <b>for</b>
+        <c>foreach</c>
+        <d>do-while</d>
+      </Answers>
+      <Correct>
+        <Option>C</Option>
+        <Explanation>
+          The foreach statement—an enhanced version of the for statement—is useful for iterating through collections such as arrays and lists. Using foreach statements eliminates the need for maintaining an index to the current item in the list. This improves code readability, makes debugging easier, and minimizes errors.
+        </Explanation>
+      </Correct>
+    </Question>
+    <Question Id="8">
+      <Text>You are developing a C# program that needs to perform 5 iterations. You write the following code: |img Unit1_Image2| When you run the program, you notice that the loop does not iterate five times. What should you do to make sure that the loop is executed exactly five times?</Text>
+      <Answers>
+        <a>Change the code in line 1 to: int count = 1;</a>
+        <b>Change the code in line 2 to: while (count == 5)</b>
+        <c>Chnage the code in line 2 to: while (count >= 5)</c>
+        <d>Change the code in line 5 to: ++count;</d>
+      </Answers>
+      <Correct>
+        <Option>A</Option>
+        <Explanation>When the value of count starts at 1, the while loop executes once for each value of count 1, 2, 3, 4, and 5. When the while condition is changed to (count == 5) or to (count >= 5), the loop will execute 0 times because the initial value of count is 0. Having ++count as a standalone statement is same as count++ and will not cause the results to vary.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="9">
+      <Text>You are developing a C# program. You write the following code line: |img Unit1_Image3| What will be the value of the variable x after this statement is executed?</Text>
+      <Answers>
+        <a>19</a>
+        <b>13</b>
+        <c>20</c>
+        <d>14</d>
+      </Answers>
+      <Correct>
+        <Option>B</Option>
+        <Explanation>
+          To evaluate this expression, you have to take into account operator precedence. The operators * and / have a higher precedence than + and –. You can also write this expression as
+
+          6 + ((4 * 4) / 2) – 1
+
+          This simplifies to, 6 + (8) – 1, resulting in 13.
+        </Explanation>
+      </Correct>
+    </Question>
+    <Question Id="10">
+      <Text>You are writing a C# program that needs to manipulate very large integer values that may exceed 12 digits. The values can be positive or negative. Which data type should you use to store a variable like this?</Text>
+      <Answers>
+        <a>int</a>
+        <b>float</b>
+        <c>double</c>
+        <d>long</d>
+      </Answers>
+      <Correct>
+        <Option>D</Option>
+        <Explanation>The long data type takes double the memory size of the int data type and can store integer values that exceed 12 digits. The int data type is relatively smaller. The float and double data types are more suited for storing floating-point numbers.</Explanation>
+      </Correct>
+    </Question>
+  </Unit>
+  
+  
+  
+  <Unit Name="Object Orientated Programming">
+    <Question Id="1">
+      <Text>You are developing code for a method that calculates the discount for the items sold. You name the method CalculateDiscount. The method defines a variable, percentValue of the type double. You need to make sure that percentValue is accessible only within the CalculateDiscount method. What access modifier should you use when defining the percentValue variable?</Text>
+      <Answers>
+        <a>private</a>
+        <b>protected</b>
+        <c>internal</c>
+        <d>public</d>
+      </Answers>
+      <Correct>
+        <Option>A</Option>
+        <Explanation>The private modifier restricts the access to the class in which the member was defined. The protected modifier restricts the access to the containing class and to any class derived directly or indirectly from the containing class. The internal modifier restricts the access to the code in the same assembly. The public modifier does not restrict access.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="2">
+      <Text>You created a class named GeoShape. You defined a method called Area in the GeoShape class. This method calculates the area of a geometric shape. You want the derived classes of GeoShape to supersede this functionality to support the area calculation of additional geometric shapes. When the method Area is invoked on a GeoShape object, the area should be calculated based on the runtime type of the GeoShape object. Which keyword should you use with the definition of the Area method in the GeoShape class?</Text>
+      <Answers>
+        <a>abstract</a>
+        <b>virtual</b>
+        <c>new</c>
+        <d>overrides</d>
+      </Answers>
+      <Correct>
+        <Option>B</Option>
+        <Explanation>Use the virtual keyword to define the Area method. When a virtual method is invoked, the runtime type of the object is checked for an overriding member. The overriding member in the most derived class is called, which might be the original member, if no derived class has overridden the member.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="3">
+      <Text>Suppose that you defined a class Scenario that defines functionality for running customized pivot transform on large data sets. You do not want the functionality of this class to be inherited into derived classes. What keyword should you use to define the Scenario class?</Text>
+      <Answers>
+        <a>sealed</a>
+        <b>abstract</b>
+        <c>private</c>
+        <d>internal</d>
+      </Answers>
+      <Correct>
+        <Option>A</Option>
+        <Explanation>Use the sealed keyword to define the Scenario class. When applied to a class, the sealed modifier prevents other classes from inheriting from it.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="4">
+      <Text>You need to provide printing functionality to several of your classes. Each class’s algorithm for printing will likely be different. Also, not all the classes have an “is-a” relationship with each other. How should you support this functionality?</Text>
+      <Answers>
+        <a>Add the print functionality to a base class with the public access modifier.</a>
+        <b>Have all classes inherit from an abstract base class and override the base-class method to provide their own print functionality.</b>
+        <c>Have all the classes inherit from a base class that provides the print functionality.</c>
+        <d>Create a common interface that all classes implement.</d>
+      </Answers>
+      <Correct>
+        <Option>D</Option>
+        <Explanation>You should create a common interface that is implemented by all classes. Interfaces are used to establish contracts through which objects can interact with each other without knowing the implementation details.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="5">
+      <Text>You are writing code for a class named Book. You should be able to get a list of all books sorted by the author’s last name. You need to write code to define this behavior of a class. Which of the following class elements should you use?</Text>
+      <Answers>
+        <a>method</a>
+        <b>property</b>
+        <c>event</c>
+        <d>delegate</d>
+      </Answers>
+      <Correct>
+        <Option>A</Option>
+        <Explanation>A method defines the behavior of a class. You can write a method that returns a list of all books sorted by the author’s last name.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="6">
+      <Text>Suppose that you are writing code for a class named Product. You need to make sure that the data members of the class are initialized to their correct values as soon as you create an object of the Product class. The initialization code should always be executed. What should you do?</Text>
+      <Answers>
+        <a>Create a static method in the Product class to initialise data members.</a>
+        <b>Create a constructor in the Product class to initialise data members.</b>
+        <c>Create a static property in the Product class to initialise data members.</c>
+        <d>Create an event in the Product class to initialise data members.</d>
+      </Answers>
+      <Correct>
+        <Option>B</Option>
+        <Explanation>Constructors are special class methods that are executed when a new instance of a class is created. Constructors are used to initialize the object’s data members.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="7">
+      <Text>You are writing code for a new method named Process: |img Unit2_Image1| The code receives a parameter of type object. You need to cast this object into the type Polygon. At times, the value of o that is passed to the method might not be a valid Polygon value. You need to make sure that the code does not generate any System.InvalidCastException errors while doing the conversions. Which of the following lines of code should you use inside the Draw method to accomplish this goal?</Text>
+      <Answers>
+        <a>Polygon p = (Polygon) o;</a>
+        <b>Polygon p = o is Polygon;</b>
+        <c>Polygon p = o as Polygon;</c>
+        <d>Polygon p = (o != null) ? o as Polygon : (Polygon) o;</d>
+      </Answers>
+      <Correct>
+        <Option>C</Option>
+        <Explanation>The as operator is similar to the cast operation but, in the case of as, if the type conversion is not possible, null is returned rather than an exception raised. An exception may be generated with the code in the other answer choices.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="8">
+      <Text>You are developing a C# application. You create a class of the name Widget. You use some third-party libraries, one of which also contains a class of the name Widget. You need to make sure that using the Widget class in your code causes no ambiguity. Which C# keyword should you use to address this requirement?</Text>
+      <Answers>
+        <a>namespace</a>
+        <b>override</b>
+        <c>delegate</c>
+        <d>class</d>
+      </Answers>
+      <Correct>
+        <Option>A</Option>
+        <Explanation>Use the namespace keyword. A namespace is a language element that allows you to organize code and create globally unique class names.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="9">
+      <Text>You are developing a C# application. You need to decide whether to declare a class member as static. Which of the following statements is true about static members of a class?</Text>
+      <Answers>
+        <a>You can use the this keyword reference with a static method or property.</a>
+        <b>Only one copy of a static field is shared by all instances of a class.</b>
+        <c>Static members of a class can be used only after an instance of a class is created.</c>
+        <d>The static keyword is used to declare members that do not belong to individual objects but to a class itself.</d>
+      </Answers>
+      <Correct>
+        <Option>D</Option>
+        <Explanation>The static keyword is used to declare members that do not belong to individual objects but to a class itself. A static member cannot be referenced through an instance object. Instead, a static member is referenced through the class name. It is not possible to use the this keyword reference with a static method or property because the this keyword can be used only to access instance objects.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="10">
+      <Text>Suppose that you are a new C# developer and are reviewing object-oriented programming fundamentals. Which of the following statements is not true?</Text>
+      <Answers>
+        <a>A class is a concrete instance of an object.</a>
+        <b>A class defines the template for an object.</b>
+        <c>A class is a definition of a new data type.</c>
+        <d>A constructor is used to initialize the data members of the object.</d>
+      </Answers>
+      <Correct>
+        <Option>D</Option>
+        <Explanation>A class is not a concrete instance of an object. Instead, an object is a concrete instance of a class. The facts in the other answer choices are all correct.</Explanation>
+      </Correct>
+    </Question>
+  </Unit>
+
+
+  <Unit Name="General Software Development">
+    <Question Id="1">
+      <Text>Arrange the various activities of an application lifecycle in the order in which they are likely to occur.</Text>
+      <Answers>
+        <a>Requirements analysis, design, coding, testing, and release</a>
+        <b>Design, requirements analysis, coding, testing, and release</b>
+        <c>Release, requirements analysis, coding, testing, and design</c>
+        <d>Requirements analysis, design, release, coding, and testing</d>
+      </Answers>
+      <Correct>
+        <Option>A</Option>
+        <Explanation>The activities of an application lifecycle are likely to take place in the following order: requirements analysis, design, coding, testing, and release.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="2">
+      <Text>You are planning to develop a new software system for your organization. You need to review the plans, models, and architecture for how the software will be implemented. Of which of the following activities should you review the output?</Text>
+      <Answers>
+        <a>requirements analysis</a>
+        <b>design</b>
+        <c>coding</c>
+        <d>testing</d>
+      </Answers>
+      <Correct>
+        <Option>B</Option>
+        <Explanation>The design activity is used to create plans, models, and architecture for how the software will be implemented.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="3">
+      <Text>You are planning to develop a new software system for your organization. You need to review the system’s technical blueprint. Which of the following participants is responsible for providing the technical blueprint?</Text>
+      <Answers>
+        <a>user interface designer</a>
+        <b>developer</b>
+        <c>architect</c>
+        <d>technical writer</d>
+      </Answers>
+      <Correct>
+        <Option>C</Option>
+        <Explanation>An architect designs the technical blueprint of the system. This includes identifying components and services, their behavior, and how they interact with each other and with the external world.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="4">
+      <Text>You are planning to develop a new software system for your organization. Someone needs to be responsible for developing system manuals and help files. Which of the following participants should you identify for this task?</Text>
+      <Answers>
+        <a>user interface designer</a>
+        <b>content developer</b>
+        <c>business analyst</c>
+        <d>technical writer</d>
+      </Answers>
+      <Correct>
+        <Option>D</Option>
+        <Explanation>Identify a technical writer for this task. Technical writers develop the system manuals and help files that will be delivered with the application.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="5">
+      <Text>You are planning to develop a new software system for your organization. You need to verify that the implementation of the system matches with the requirements of the system. Which of the following activities would accomplish this requirement?</Text>
+      <Answers>
+        <a>testing</a>
+        <b>design</b>
+        <c>release</c>
+        <d>requirements analysis</d>
+      </Answers>
+      <Correct>
+        <Option>A</Option>
+        <Explanation>Use the testing activity to assure the quality of the final product. Testing can identify possible gaps between the system expectations described in the requirements document and actual system behavior.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="6">
+      <Text>You are planning to develop a new software system for your organization. You need to review the plan for packaging, deployment, delivery, and support for the software. Which of the following should you contact?</Text>
+      <Answers>
+        <a>quality assurance manager</a>
+        <b>release manager</b>
+        <c>technical architect</c>
+        <d>database administrator</d>
+      </Answers>
+      <Correct>
+        <Option>B</Option>
+        <Explanation>Release management includes activities such as packaging and deploying the software, managing software defects, and managing software change requests. The release manager coordinates various teams and business units to ensure timely release of a software product.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="7">
+      <Text>You are in the process of developing a new software application. As defects are reported, you take the necessary steps to fix them. You need to make sure that each new fix doesn’t break anything that was previously working. Which type of testing should you use?</Text>
+      <Answers>
+        <a>integration testing</a>
+        <b>system testing</b>
+        <c>acceptance testing</c>
+        <d>regression testing</d>
+      </Answers>
+      <Correct>
+        <Option>D</Option>
+        <Explanation>As the defects in a software application are reported and fixed, you need to make sure that each new fix doesn’t break anything that was previously working. This is where regression testing comes in handy. With every new fix, software testers usually run a battery of regression tests to make sure that every function that was already known to work correctly is still working.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="8">
+      <Text>You have completed developing a new software application. To ensure the quality of the software, you need to verify that each method or function has proper test cases available. Which testing approach should you use?</Text>
+      <Answers>
+        <a>white-box testing</a>
+        <b>black-box testing</b>
+        <c>alpha testing</c>
+        <d>beta testing</d>
+      </Answers>
+      <Correct>
+        <Option>A</Option>
+        <Explanation>Black-box testing treats the software as a “black box,” focusing solely on inputs and outputs. On the other hand, white-box testing is used to make sure that each method or function has proper test cases available. Alpha and beta testing are both black-box types of testing.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="9">
+      <Text>You have completed developing several major features of a new software application. You plan to provide an early look at the product to important external customers to gather some early feedback. Your application still misses features and you haven’t yet optimized the application for performance and security. Which kind of testing should you perform with a limited number of external customers?</Text>
+      <Answers>
+        <a>white-box testing</a>
+        <b>black-box testing</b>
+        <c>alpha testing</c>
+        <d>beta testing</d>
+      </Answers>
+      <Correct>
+        <Option>D</Option>
+        <Explanation>Beta testing—performed by a limited group of users that are external—provides opportunities to give actual users an early look at the product and to gather feedback. Alpha and Beta releases may miss some features and generally lack many nonfunctional attributes such as performance.  In Beta testing, you release the product to a wider audience of customers than Alpha testing (and Alpha is predominantly done in-house).  The idea is to solicit feedback. In terms of functionality, the beta release of the software is very close to the final release. However, the development teams might still be working on improving performance and fixing known defects.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="10">
+      <Text>You are developing a new application that optimizes the processing of a manufacturing plant’s operations. You need to implement a data structure that works as a “buffer” for overflow capacity. When the manufacturing capacity is available, the items in the buffer need to be processed in the order in which they were added to the buffer. Which data structure should you use to implement such buffer?</Text>
+      <Answers>
+        <a>array</a>
+        <b>linked list</b>
+        <c>stack</c>
+        <d>queue</d>
+      </Answers>
+      <Correct>
+        <Option>D</Option>
+        <Explanation>In a queue, items are processed in the order in which they were added to the queue. In particular, items are always added at the end of the queue and removed from the front of the queue. This is also commonly known as first-in, first-out (FIFO) processing.</Explanation>
+      </Correct>
+    </Question>
+  </Unit>
+  
+</questions>

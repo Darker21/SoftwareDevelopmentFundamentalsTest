@@ -1,0 +1,116 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Nunito:400,700');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8b888f
+}
+
+.MainContent {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+.HeaderContainer {
+    background-color: #9C93A9;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    width: 75%;
+    margin: auto;
+    padding: 2%;
+    text-align: center;
+    display: block;
+    font-size: 32px;
+}
+
+.PageContent
+{
+    background: #ffffff;
+    font-size: 18px;
+    color: #9C93A9;
+    padding: 2%;
+    width: 75%;
+    margin: auto;
+    min-height: 500px;
+}
+
+.FooterContainer
+{
+    border-top: 1px solid #9C93A9;
+    background: linear-gradient(to bottom, #ffffff 50%, #8b888f);
+    background: -webkit-linear-gradient(to bottom, #ffffff 50%, #8b888f);
+    background: -moz-linear-gradient(to bottom, #ffffff 50%, #8b888f);
+    background: -o-linear-gradient(to bottom, #ffffff 50%, #8b888f);
+    height: 50px;
+    color: #9C93A9;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    width: 75%;
+    font-style: italic;
+    margin: auto;
+    padding: 2%;
+}
+
+.HomeButton {
+    width: 50%;
+    height: 75px;
+    font-size: 32px;
+    margin: auto;
+    background: #9C93A9;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0px;
+    display: block;
+}
+
+.HeaderText {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.PrimaryButton
+{
+    min-width: 5%;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    background-color: #9C93A9;
+    color: white;
+    cursor: pointer;
+}
+
+.SecondaryButton
+{
+    min-width: 5%;
+    font-size: 24px;
+    border-radius: 10px;
+    border: #9C93A9 solid 2px;
+    background: #ffffff;
+    color: #9C93A9;
+    cursor: pointer;
+}
+
+hr
+{
+    color: rgb(162,139,162);
+    background-color: rgb(162,139,162);
+    border: 0.1vw solid rgb(162,139,162);
+}
+
+.ExplanationButton {
+    min-width: 5%;
+    font-size: 16px;
+    border: none;
+    background: #ffffff;
+    color: #9C93A9;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}

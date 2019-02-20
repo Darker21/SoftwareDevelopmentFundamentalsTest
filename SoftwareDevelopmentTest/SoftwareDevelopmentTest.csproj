@@ -121,6 +121,8 @@
     <Content Include="Images\Unit1\Image1.png" />
     <Content Include="Images\Unit1\Image2.png" />
     <Content Include="Images\Unit1\Image3.png" />
+    <Content Include="Images\Unit1\Image4.png" />
+    <Content Include="Images\Unit1\Image5.png" />
     <Content Include="Images\Unit2\Image1.png" />
     <Content Include="Questions.xml">
       <SubType>Designer</SubType>

@@ -158,6 +158,61 @@
         <Explanation>The long data type takes double the memory size of the int data type and can store integer values that exceed 12 digits. The int data type is relatively smaller. The float and double data types are more suited for storing floating-point numbers.</Explanation>
       </Correct>
     </Question>
+    <Question Id="11">
+      <Text>You are writing a C# program that needs to iterate a fixed number of times. You need to make sure that your code is easy to understand and maintain even when the loop body contains complex code. Which of the following C# statements provide the best solution for this requirement? </Text>
+      <Answers>
+        <a>while</a>
+        <b>for</b>
+        <c>foreach</c>
+        <d>do-while</d>
+      </Answers>
+      <Correct>
+        <Option>B</Option>
+        <Explanation>The for loop is ideal for creating iterations that must execute a specified number of times. The for loop combines the three elements of iteration—the initialization expression, the termination condition expression, and the counting expression—into a more readable code by placing them outside the loop body. This improves code readability, makes debugging easier and minimizes errors.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="12">
+      <Text>You are developing an algorithm before you write the C# program. You need to perform some calculations on a number. You develop the following flowchart for the calculation: |img Unit1_Image4| If the input value of n is 5, what is the output value of the variable fact according to this flowchart?</Text>
+      <Answers>
+        <a>720</a>
+        <b>120</b>
+        <c>24</c>
+        <d>6</d>
+      </Answers>
+      <Correct>
+        <Option>B</Option>
+        <Explanation>Here, you enter the loop once each time when the value of n is 5, 4, 3, and 2. So the final result will be 5 * 4 * 3 * 2 = 120.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="13">
+      <Text>
+        You are writing a C# program. You write the following method: |img Unit1_Image5| However, when you compile this code, you get the following error message:
+        "Control cannot fall through from one case label to another"
+        How should you modify the code to make sure that it compiles successfully?
+      </Text>
+      <Answers>
+        <a>
+          After each case, add the following code line:
+          break;
+        </a>
+        <b>
+          After each case, add the following code line:
+          continue;
+        </b>
+        <c>
+          After each case, add the following code line:
+          goto default;
+        </c>
+        <d>
+          After each case, add the following code line:
+          return;
+        </d>
+      </Answers>
+      <Correct>
+        <Option>A</Option>
+        <Explanation>In this code example, no break statement occurs after each case. The break statement terminates the switch statement and transfers control to the next statement outside the switch block. The continue statement is not the right answer because no enclosing loop is included here. The goto and return statements are not correct because they will change the program’s intended output.</Explanation>
+      </Correct>
+    </Question>
   </Unit>
   
   
@@ -425,6 +480,19 @@
       <Correct>
         <Option>D</Option>
         <Explanation>In a queue, items are processed in the order in which they were added to the queue. In particular, items are always added at the end of the queue and removed from the front of the queue. This is also commonly known as first-in, first-out (FIFO) processing.</Explanation>
+      </Correct>
+    </Question>
+    <Question Id="11">
+      <Text>You are developing a program that performs frequent insert and delete operations on the data. Your requirement also dictates the capability to access previous and next records when the user clicks the previous or next button. Which of the following data structures will best suit your requirements?</Text>
+      <Answers>
+        <a>array</a>
+        <b>circular linked list</b>
+        <c>linked list</c>
+        <d>doubly linked list</d>
+      </Answers>
+      <Correct>
+        <Option>D</Option>
+        <Explanation>Because you need to perform frequent insert and delete operations, using a linked list is better than using arrays. Also, because you need access to both previous and next records, you must use a doubly linked list. The linked list and circular linked list let you traverse in only one direction.</Explanation>
       </Correct>
     </Question>
   </Unit>

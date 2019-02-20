@@ -16,6 +16,12 @@ namespace SoftwareDevelopmentTest.Test
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["Unit1Answers"] == null)
+            {
+                Response.Redirect("~/Test/Page1.aspx");
+            }
+
             // Load the XML document that contains the questions
             XmlDocument questionDocument = new XmlDocument();
             questionDocument.Load(Server.MapPath("~/Questions.xml"));
@@ -44,11 +50,11 @@ namespace SoftwareDevelopmentTest.Test
                 if (Session["Unit2Questions"] == null)
                 {
                     // Get random question
-                    x = rand.Next(1, 11);
+                    x = rand.Next(1, unitQuestions.SelectNodes("Question[@Id]").Count + 1);
                     // if the list contains the question index - get new random index until it is unique
                     while (questionsGot.Contains(x))
                     {
-                        x = rand.Next(1, 11);
+                        x = rand.Next(1, unitQuestions.SelectNodes("Question[@Id]").Count + 1);
                     }
                     // add it to the list
                     questionsGot.Add(x);
@@ -77,7 +83,6 @@ namespace SoftwareDevelopmentTest.Test
                         case "img":
                             iImage = new Image();
                             iImage.ImageUrl = "~/Images/" + sDataValue.Split('_')[0] + "/" + sDataValue.Split('_')[1] + ".png";
-                            iImage.ToolTip = question.Attributes["Id"].ToString();
                             Label l = new Label();
                             l.CssClass = "SubHeaderText";
                             l.Text = (i + 1).ToString() + ". " + sQuestion.Substring(0, sQuestion.IndexOf("|"));

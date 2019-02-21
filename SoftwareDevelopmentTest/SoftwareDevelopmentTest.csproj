@@ -112,7 +112,6 @@
     <Content Include="App_Themes\Main\Main.css" />
     <Content Include="Default.aspx" />
     <Content Include="Libraries\ExceptionHandler.dll" />
-    <Content Include="Libraries\ExceptionHandler.pdb" />
     <Content Include="favicon.ico" />
     <Content Include="Images\Unit1\Image1.png" />
     <Content Include="Images\Unit1\Image2.png" />
